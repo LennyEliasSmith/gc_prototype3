@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 6198840701348277464}
   - component: {fileID: 1974316512397074446}
   - component: {fileID: 4061841417239059136}
+  - component: {fileID: 2383411323795096111}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -166,6 +167,39 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2383411323795096111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263337485173941667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a207edcd76e675f408db956b437607e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _FishCompendium: {fileID: 8741165714304002707}
+  _FishDataSheet: {fileID: 6576603833107157216}
+  isGamePaused: 0
+--- !u!114 &1488179938873580546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8741165714304002707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fc2540a15f10441a81f64d13173253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fishCells:
+  - {fileID: 5823075305619476693}
+  - {fileID: 2828598509968574190}
+  - {fileID: 6716539591075693927}
+  cell1Data: 
+  cell1Sprite: {fileID: 0}
 --- !u!1 &9158883988018441967
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099871962517115030}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,6 +259,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 270504339018828582, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 270504339018828582, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 270504339018828582, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 270504339018828582, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2383411323795096111}
+    - target: {fileID: 270504339018828582, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccessFishDataSheet
+      objectReference: {fileID: 0}
+    - target: {fileID: 270504339018828582, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2242470247474304663, guid: 096e0d9c741f9c04699c5edd9a132dfb,
         type: 3}
       propertyPath: m_Name
@@ -234,6 +298,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573498490441149619, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573498490441149619, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573498490441149619, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573498490441149619, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2383411323795096111}
+    - target: {fileID: 5573498490441149619, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccessFishDataSheet
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573498490441149619, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5609143809184698259, guid: 096e0d9c741f9c04699c5edd9a132dfb,
         type: 3}
@@ -360,6 +454,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7364498006914086835, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364498006914086835, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364498006914086835, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364498006914086835, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2383411323795096111}
+    - target: {fileID: 7364498006914086835, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccessFishDataSheet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364498006914086835, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9184561852138541004, guid: 096e0d9c741f9c04699c5edd9a132dfb,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -382,9 +506,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 096e0d9c741f9c04699c5edd9a132dfb, type: 3}
+--- !u!1 &8741165714304002707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2242470247474304663, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7372393863798815748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3136668886996775831 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5609143809184698259, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7372393863798815748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5823075305619476693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3936068060002331857, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7372393863798815748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2828598509968574190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4688584157194828522, guid: 096e0d9c741f9c04699c5edd9a132dfb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7372393863798815748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6716539591075693927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4280090923239831907, guid: 096e0d9c741f9c04699c5edd9a132dfb,
     type: 3}
   m_PrefabInstance: {fileID: 7372393863798815748}
   m_PrefabAsset: {fileID: 0}
@@ -500,13 +648,39 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2130361646950208097, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6624
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130361646950208097, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6624
+      objectReference: {fileID: 0}
+    - target: {fileID: 2130361646950208097, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6624
+      objectReference: {fileID: 0}
     - target: {fileID: 3324987263301351660, guid: fff3154088ad4a742a25bf9e2aee3b99,
         type: 3}
       propertyPath: m_Name
-      value: FishDataPage
+      value: FishDataSheet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324987263301351660, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff3154088ad4a742a25bf9e2aee3b99, type: 3}
+--- !u!1 &6576603833107157216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3324987263301351660, guid: fff3154088ad4a742a25bf9e2aee3b99,
+    type: 3}
+  m_PrefabInstance: {fileID: 8457883362056824844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7561790865341954669 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2130361646950208097, guid: fff3154088ad4a742a25bf9e2aee3b99,
