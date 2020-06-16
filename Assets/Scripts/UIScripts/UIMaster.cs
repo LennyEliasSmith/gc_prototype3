@@ -8,7 +8,10 @@ public class UIMaster : MonoBehaviour
     public GameObject _FishCompendium;
     public GameObject _FishDataSheet;
 
+    public Transform FishMaster;
+
     public bool isGamePaused = false;
+    public bool isCompendiumOpen = false;
 
     
 
@@ -43,6 +46,7 @@ public class UIMaster : MonoBehaviour
     public void AccessCompendium()
     {
         isGamePaused = true;
+        isCompendiumOpen = true;
         _FishCompendium.SetActive(true);
         
 
@@ -56,10 +60,35 @@ public class UIMaster : MonoBehaviour
     }
 
     //Datasheet
-    public void AccessFishDatasheet()
+    public void AccessFishDatasheet1()
     {
+        FishMaster.gameObject.tag = "Fish1";
         isGamePaused = true;
         _FishCompendium.SetActive(false);
         _FishDataSheet.SetActive(true);
+
+        
     }
+
+    public void AccessFishDatasheet2()
+    {
+        FishMaster.gameObject.tag = "Fish2";
+        isGamePaused = true;
+        _FishCompendium.SetActive(false);
+        _FishDataSheet.SetActive(true);
+
+
+    }
+
+    public void AccessFishDatasheet3()
+    {
+        FishMaster.gameObject.tag = "Fish3";
+        isGamePaused = true;
+        _FishCompendium.SetActive(false);
+        _FishDataSheet.SetActive(true);
+
+
+    }
+
+
 }
