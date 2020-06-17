@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _FishCompendium: {fileID: 8741165714304002707}
   _FishDataSheet: {fileID: 6576603833107157216}
+  FishMaster: {fileID: 0}
   isGamePaused: 0
   isCompendiumOpen: 0
 --- !u!1 &6736532797725525197
@@ -1019,6 +1020,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textAlignment
       value: 258
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473349654390567331, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2383411323795096111}
+    - target: {fileID: 5473349654390567331, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccessCompendium
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473349654390567331, guid: fff3154088ad4a742a25bf9e2aee3b99,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6391607076775695557, guid: fff3154088ad4a742a25bf9e2aee3b99,
         type: 3}

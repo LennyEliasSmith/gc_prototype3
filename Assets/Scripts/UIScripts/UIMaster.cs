@@ -48,7 +48,7 @@ public class UIMaster : MonoBehaviour
         isGamePaused = true;
         isCompendiumOpen = true;
         _FishCompendium.SetActive(true);
-        
+        _FishDataSheet.SetActive(false);
 
     }
 
