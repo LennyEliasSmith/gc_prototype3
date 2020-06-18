@@ -117,5 +117,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6966096170455126630}
-  magnitude: 40
+  magnitude: 30
   lifeTime: 3

@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3312532278991725201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,5 +117,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6491105623050156340}
-  magnitude: 40
+  magnitude: 30
   lifeTime: 3
