@@ -13,16 +13,26 @@ public class Hook : MonoBehaviour
     private GameObject lureClone;
 
     private Animator animator;
+    private Animator cloneAnimator;
 
     public bool hookActive;
     public bool hookBitten;
 
     public GameObject[] fish;
+    public AudioSource sounds;
+    private AudioClip castBob;
+    private AudioClip pullBob;
 
     void Start()
     {
         timerWait = Random.Range(0.0f,15.0f);
         animator = GetComponent<Animator>();
+
+        AudioSource[] sources = GetComponentsInChildren<AudioSource>();
+
+        sounds = sources[0];
+        castBob = sources[0].clip;
+        pullBob = sources[1].clip;
     }
 
     void Update()
@@ -49,18 +59,22 @@ public class Hook : MonoBehaviour
         {
             hookBitten = true;
             animator.SetBool("hookBitten", true);
+            cloneAnimator.SetBool("hookBitten", true);
         }
     }
 
     void CastHook()
     {
+        sounds.PlayOneShot(castBob);
         lureClone = Instantiate(lure, worldPosition, lure.transform.rotation);
+        cloneAnimator = lureClone.GetComponent<Animator>();
         hookActive = true;
         animator.SetBool("hookActive", true);
     }
 
     void PullHook()
     {
+        sounds.PlayOneShot(pullBob);
         Destroy(lureClone);
         hookActive = false;
 
@@ -71,6 +85,7 @@ public class Hook : MonoBehaviour
             SpawnFish();
             hookBitten = false;
             animator.SetBool("hookBitten", false);
+            cloneAnimator.SetBool("hookBitten", false);
         }
         animator.SetBool("hookActive", false);
         animator.SetTrigger("hookPull");
@@ -88,6 +103,8 @@ public class Hook : MonoBehaviour
     {
         int fishIndex = Random.Range(0, fish.Length - 1);
 
-        Instantiate(fish[fishIndex], transform);
+        Instantiate(fish[fishIndex], lureClone.transform);
+
+        Debug.Log("Spawned fish " + fishIndex);
     }
 }
