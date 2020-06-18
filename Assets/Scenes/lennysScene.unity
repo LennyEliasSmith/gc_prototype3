@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &506865562 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5716939868912594847, guid: 71dad58b56130de4cb6935bb98356c6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1442963067}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1442963067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,16 +446,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 051dbe7bb3eb423429cb6b53e64779fa,
         type: 3}
-    - target: {fileID: 2383411323795096111, guid: 71dad58b56130de4cb6935bb98356c6c,
-        type: 3}
-      propertyPath: FishMaster
-      value: 
-      objectReference: {fileID: 506865562}
-    - target: {fileID: 2383411323795096111, guid: 71dad58b56130de4cb6935bb98356c6c,
-        type: 3}
-      propertyPath: _pauseMenu
-      value: 
-      objectReference: {fileID: 1514420863}
     - target: {fileID: 2850647122736618537, guid: 71dad58b56130de4cb6935bb98356c6c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1233,12 +1217,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71dad58b56130de4cb6935bb98356c6c, type: 3}
---- !u!1 &1514420863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3210758396184376762, guid: 71dad58b56130de4cb6935bb98356c6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1442963067}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838383697
 GameObject:
   m_ObjectHideFlags: 0

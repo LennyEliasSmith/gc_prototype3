@@ -66,6 +66,15 @@ MonoBehaviour:
   cellName3: Bastard Carp
   cellData3: This is one mean bugger.
   cellSprite3: {fileID: 21300000, guid: f4fedf84f6a5a1146bbce4eece657f77, type: 3}
+  cellName4: Edible Eel
+  cellData4: The eel's meat is delicious!
+  cellSprite4: {fileID: 21300000, guid: 80cb0c291c7244041bb0eef0a84b1f77, type: 3}
+  cellName5: Juicy Jellyfish
+  cellData5: It's insides look very juicy...
+  cellSprite5: {fileID: 21300000, guid: 54b08382a33509a4990c71c507b1bb34, type: 3}
+  cellName6: 
+  cellData6: 
+  cellSprite6: {fileID: 0}
 --- !u!1 &4257365098854269165
 GameObject:
   m_ObjectHideFlags: 0

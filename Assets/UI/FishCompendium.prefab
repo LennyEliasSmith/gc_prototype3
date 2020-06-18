@@ -596,6 +596,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5609143809184698259}
     m_Modifications:
+    - target: {fileID: 367459307362167462, guid: 99b99dad5db5f884eb97c17f3f333a37,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 367459307362167462, guid: 99b99dad5db5f884eb97c17f3f333a37,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 367459307362167462, guid: 99b99dad5db5f884eb97c17f3f333a37,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 367459307362167462, guid: 99b99dad5db5f884eb97c17f3f333a37,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3936068060002331857}
     - target: {fileID: 2043675420611990233, guid: 99b99dad5db5f884eb97c17f3f333a37,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -771,6 +791,12 @@ PrefabInstance:
 --- !u!224 &4733309239855940591 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2493479121336934138, guid: 99b99dad5db5f884eb97c17f3f333a37,
+    type: 3}
+  m_PrefabInstance: {fileID: 7145675079862721813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3936068060002331857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6175895978489885124, guid: 99b99dad5db5f884eb97c17f3f333a37,
     type: 3}
   m_PrefabInstance: {fileID: 7145675079862721813}
   m_PrefabAsset: {fileID: 0}

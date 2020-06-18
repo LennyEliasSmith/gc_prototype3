@@ -30,6 +30,10 @@ public class dataSheet : MonoBehaviour
     public string cellData5;
     public Sprite cellSprite5;
 
+    public string cellName6;
+    public string cellData6;
+    public Sprite cellSprite6;
+
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +83,15 @@ public class dataSheet : MonoBehaviour
         }
 
         if (GameObject.FindGameObjectWithTag("Fish5"))
+        {
+
+            fishName.text = cellName5.ToString();
+            data.text = cellData5.ToString();
+            spriteR.sprite = cellSprite5;
+
+        }
+
+        if (GameObject.FindGameObjectWithTag("Fish6"))
         {
 
             fishName.text = cellName5.ToString();
