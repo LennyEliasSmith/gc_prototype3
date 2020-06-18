@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 2e2c9d74dbc68b64a9122058d386cdb7
+guid: 39bd88b3b41065e43a803d6b33669765
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5899847947390980637
-    second: bob_0
+      213: -38919312050494332
+    second: catch_0
   - first:
-      213: 4058500632094824262
-    second: bob_1
+      213: 3463347369685104612
+    second: catch_1
+  - first:
+      213: -8563007797773266110
+    second: catch_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -93,7 +96,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bob_0
+      name: catch_0
       rect:
         serializedVersion: 2
         x: 0
@@ -107,14 +110,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d129e0d037870e150800000000000000
-      internalID: 5899847947390980637
+      spriteID: 484e356871bb57ff0800000000000000
+      internalID: -38919312050494332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bob_1
+      name: catch_1
       rect:
         serializedVersion: 2
         x: 7
@@ -128,8 +131,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 647d5b072d0b25830800000000000000
-      internalID: 4058500632094824262
+      spriteID: 4e73dd74518401030800000000000000
+      internalID: 3463347369685104612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catch_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24313d4d6c51a2980800000000000000
+      internalID: -8563007797773266110
       vertices: []
       indices: 
       edges: []
