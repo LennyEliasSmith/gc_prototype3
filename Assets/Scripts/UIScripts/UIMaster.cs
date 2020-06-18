@@ -162,5 +162,15 @@ public class UIMaster : MonoBehaviour
 
     }
 
+    public void AccessFishDatasheet6()
+    {
+        FishMaster.gameObject.tag = "Fish6";
+        isGamePaused = true;
+        _FishCompendium.SetActive(false);
+        _FishDataSheet.SetActive(true);
+
+
+    }
+
 
 }

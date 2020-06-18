@@ -94,9 +94,9 @@ public class dataSheet : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Fish6"))
         {
 
-            fishName.text = cellName5.ToString();
-            data.text = cellData5.ToString();
-            spriteR.sprite = cellSprite5;
+            fishName.text = cellName6.ToString();
+            data.text = cellData6.ToString();
+            spriteR.sprite = cellSprite6;
 
         }
 
