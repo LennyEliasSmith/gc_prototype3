@@ -11,6 +11,8 @@ TagManager:
   - Fish1
   - Fish2
   - Fish3
+  - Fish4
+  - Fish5
   layers:
   - Default
   - TransparentFX

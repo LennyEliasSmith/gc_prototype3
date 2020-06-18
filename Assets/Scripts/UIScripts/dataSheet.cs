@@ -22,6 +22,14 @@ public class dataSheet : MonoBehaviour
     public string cellData3;
     public Sprite cellSprite3;
 
+    public string cellName4;
+    public string cellData4;
+    public Sprite cellSprite4;
+
+    public string cellName5;
+    public string cellData5;
+    public Sprite cellSprite5;
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +66,24 @@ public class dataSheet : MonoBehaviour
             fishName.text = cellName3.ToString();
             data.text = cellData3.ToString();
             spriteR.sprite = cellSprite3;
+
+        }
+
+        if (GameObject.FindGameObjectWithTag("Fish4"))
+        {
+
+            fishName.text = cellName4.ToString();
+            data.text = cellData4.ToString();
+            spriteR.sprite = cellSprite4;
+
+        }
+
+        if (GameObject.FindGameObjectWithTag("Fish5"))
+        {
+
+            fishName.text = cellName5.ToString();
+            data.text = cellData5.ToString();
+            spriteR.sprite = cellSprite5;
 
         }
 
