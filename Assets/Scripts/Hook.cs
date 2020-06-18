@@ -17,6 +17,8 @@ public class Hook : MonoBehaviour
     public bool hookActive;
     public bool hookBitten;
 
+    public GameObject[] fish;
+
     void Start()
     {
         timerWait = Random.Range(0.0f,15.0f);
@@ -66,6 +68,7 @@ public class Hook : MonoBehaviour
         if(hookBitten)
         {
             Debug.Log("You caught FISH");
+            SpawnFish();
             hookBitten = false;
             animator.SetBool("hookBitten", false);
         }
@@ -79,5 +82,12 @@ public class Hook : MonoBehaviour
     void SetRandomTimer()
     {
         timerWait = Random.Range(1.0f, 15.0f);
+    }
+
+    void SpawnFish()
+    {
+        int fishIndex = Random.Range(0, fish.Length - 1);
+
+        Instantiate(fish[fishIndex], transform);
     }
 }

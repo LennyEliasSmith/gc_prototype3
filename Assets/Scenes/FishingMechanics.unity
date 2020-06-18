@@ -440,10 +440,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  maxTimerWait: 0
+  timerWait: 0
   worldPosition: {x: 0, y: 0, z: 0}
   lure: {fileID: 1023450964}
   hookActive: 0
+  hookBitten: 0
+  fish:
+  - {fileID: 6043692100949468757, guid: c38f86d9a8cb93b45ac409c9b0465c90, type: 3}
+  - {fileID: 991556829132149632, guid: 9af73197ecf32914f9614ab4afabcbac, type: 3}
+  - {fileID: 8646534470680023982, guid: f7aee2c2ad32cb844aa0bb51e5d94b11, type: 3}
+  - {fileID: 2669072144102467273, guid: a1a20d61998a3934693ca11424bb7fa8, type: 3}
+  - {fileID: 8790592611855798823, guid: a2f002d41ea60de4f937a287851a535f, type: 3}
 --- !u!65 &1543602815
 BoxCollider:
   m_ObjectHideFlags: 0
