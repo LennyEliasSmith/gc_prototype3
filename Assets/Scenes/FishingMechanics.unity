@@ -414,6 +414,48 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11cc0db1a691524683b40f9b2045968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  timerWait: 0
+  worldPosition: {x: 0, y: 0, z: 0}
+  lure: {fileID: 1023450964}
+  hookActive: 0
+  hookBitten: 0
+  fish:
+  - {fileID: 6043692100949468757, guid: c38f86d9a8cb93b45ac409c9b0465c90, type: 3}
+  - {fileID: 991556829132149632, guid: 9af73197ecf32914f9614ab4afabcbac, type: 3}
+  - {fileID: 8646534470680023982, guid: f7aee2c2ad32cb844aa0bb51e5d94b11, type: 3}
+  - {fileID: 2669072144102467273, guid: a1a20d61998a3934693ca11424bb7fa8, type: 3}
+  - {fileID: 8790592611855798823, guid: a2f002d41ea60de4f937a287851a535f, type: 3}
+  - {fileID: 5235506766321861529, guid: e75e7cb9930fde04eb0709927423e2d8, type: 3}
+  - {fileID: 5693453210785293469, guid: ddddb776cd6252a4781a74b2266cbeb7, type: 3}
+  fishPosition: {x: -1, y: 4, z: 0}
+--- !u!65 &1543602815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543602813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1543602816
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543602813}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

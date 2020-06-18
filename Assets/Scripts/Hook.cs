@@ -19,6 +19,7 @@ public class Hook : MonoBehaviour
     public bool hookBitten;
 
     public GameObject[] fish;
+    public Vector3 fishPosition;
     public AudioSource sounds;
     private AudioClip castBob;
     private AudioClip pullBob;
@@ -103,6 +104,7 @@ public class Hook : MonoBehaviour
     {
         int fishIndex = Random.Range(0, fish.Length - 1);
 
+        Instantiate(fish[fishIndex], fishPosition, Quaternion.identity);
         Instantiate(fish[fishIndex], lureClone.transform);
 
         Debug.Log("Spawned fish " + fishIndex);
